@@ -503,7 +503,7 @@ if uploaded_file is not None:
         predicted_class = class_names[predicted_idx]
         confidence = float(np.max(score))
         
-        CONFIDENCE_THRESHOLD = 0.40
+        CONFIDENCE_THRESHOLD = 0.20
         if confidence < CONFIDENCE_THRESHOLD:
             predicted_class = 'Bukan Apel'
 
